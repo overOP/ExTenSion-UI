@@ -1,5 +1,5 @@
 // import React from 'react'
-import { useState } from 'react';
+import { useState } from 'react'; //useState is a hook that allows you to manage state within a functional component
 import Nav from './components/Nav'
 import Btn from './components/Btn'
 import Card from './components/Card'
@@ -12,18 +12,18 @@ const App = () => {
 
   // Card data
   const cardData = [
-    { img: '/src/images/logo-devlens.svg', header: 'DevLens', description: 'Quickly inspect page layouts and visualize element boundaries.', status: 'Active' },
-    { img: '/src/images/logo-style-spy.svg', header: 'StyleSpy', description: 'Instantly analyze and copy CSS from any webpage element.', status: 'Active' },
-    { img: '/src/images/logo-speed-boost.svg', header: 'SpeedBoost', description: 'Optimizes browser resource usage to accelerate page loading.', status: 'Inactive' },
-    { img: '/src/images/logo-json-wizard.svg', header: 'JSONWizard', description: 'Formats, validates, and prettifies JSON responses in-browser.', status: 'Active' },
-    { img: '/src/images/logo-tab-master-pro.svg', header: 'TabMaster Pro', description: 'Organizes browser tabs into groups and sessions.', status: 'Active' },
-    { img: '/src/images/logo-viewport-buddy.svg', header: 'ViewportBuddy', description: 'Simulates various screen resolutions directly within the browser.', status: 'Inactive' },
-    { img: '/src/images/logo-markup-notes.svg', header: 'Markup Notes', description: 'Enables annotation and notes directly onto webpages for collaborative debugging.', status: 'Active' },
-    { img: '/src/images/logo-grid-guides.svg', header: 'GridGuides', description: 'Overlay customizable grids and alignment guides on any webpage.', status: 'Inactive' },
-    { img: '/src/images/logo-palette-picker.svg', header: 'Palette Picker', description: 'Instantly extracts color palettes from any webpage.', status: 'Active' },
-    { img: '/src/images/logo-link-checker.svg', header: 'LinkChecker', description: 'Scans and highlights broken links on any page.', status: 'Active' },
-    { img: '/src/images/logo-dom-snapshot.svg', header: 'DOM Snapshot', description: 'Capture and export DOM structures quickly.', status: 'Inactive' },
-    { img: '/src/images/logo-console-plus.svg', header: 'ConsolePlus', description: 'Enhanced developer console with advanced filtering and logging.', status: 'Active' },
+    { img: './logo-devlens.svg', header: 'DevLens', description: 'Quickly inspect page layouts and visualize element boundaries.', status: 'Active' },
+    { img: './logo-style-spy.svg', header: 'StyleSpy', description: 'Instantly analyze and copy CSS from any webpage element.', status: 'Active' },
+    { img: './logo-speed-boost.svg', header: 'SpeedBoost', description: 'Optimizes browser resource usage to accelerate page loading.', status: 'Inactive' },
+    { img: './logo-json-wizard.svg', header: 'JSONWizard', description: 'Formats, validates, and prettifies JSON responses in-browser.', status: 'Active' },
+    { img: './logo-tab-master-pro.svg', header: 'TabMaster Pro', description: 'Organizes browser tabs into groups and sessions.', status: 'Active' },
+    { img: './logo-viewport-buddy.svg', header: 'ViewportBuddy', description: 'Simulates various screen resolutions directly within the browser.', status: 'Inactive' },
+    { img: './logo-markup-notes.svg', header: 'Markup Notes', description: 'Enables annotation and notes directly onto webpages for collaborative debugging.', status: 'Active' },
+    { img: './logo-grid-guides.svg', header: 'GridGuides', description: 'Overlay customizable grids and alignment guides on any webpage.', status: 'Inactive' },
+    { img: './logo-palette-picker.svg', header: 'Palette Picker', description: 'Instantly extracts color palettes from any webpage.', status: 'Active' },
+    { img: './logo-link-checker.svg', header: 'LinkChecker', description: 'Scans and highlights broken links on any page.', status: 'Active' },
+    { img: './logo-dom-snapshot.svg', header: 'DOM Snapshot', description: 'Capture and export DOM structures quickly.', status: 'Inactive' },
+    { img: './logo-console-plus.svg', header: 'ConsolePlus', description: 'Enhanced developer console with advanced filtering and logging.', status: 'Active' },
   ];
 
   // Dark Mode
@@ -48,7 +48,7 @@ const App = () => {
           Extensions List
         </h1>
 
-        <div className='flex justify-center gap-8 mt-5 lg:ml-[75rem]'>
+        <div className='flex justify-center gap-8 mt-5 lg:ml-[60rem]'>
           <Btn className='bg-[#f35a54]' name={btn1} onClick={() => setFilter('All')} />
           <Btn name={btn2} onClick={() => setFilter('Active')} />
           <Btn name={btn3} onClick={() => setFilter('Inactive')} />
